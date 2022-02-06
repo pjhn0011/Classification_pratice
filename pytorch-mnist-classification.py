@@ -21,8 +21,8 @@ trans = transforms.Compose([
 # Load the image set
 # Download the train and test dataset, respectively.
 # train image set (60,000, 28, 28), test image set (10,000, 28, 28)
-train_X = torchvision.datasets.MNIST('./data', True, transform=trans, download=False)
-test_X = torchvision.datasets.MNIST('./data', False, transform=trans, download=False)
+train_X = torchvision.datasets.MNIST('./data', True, transform=trans, download=True)
+test_X = torchvision.datasets.MNIST('./data', False, transform=trans, download=True)
 
 # Setup the loader
 # for train data, data random shuffle and drop_last are used.
